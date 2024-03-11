@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Gửi em!</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="loader">
+            <div class="cardHover">
+                <div class="inner one" style="--i:1;"></div>
+                <div class="inner two" style="--i:1;"></div>
+                <div class="inner three" style="--i:1;"></div>
+                <div class="box-heart">
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+        <button><p>Click to receive thousands of wishes</p></button>
+        <div class="content">
+            <i class="fa-solid fa-xmark"></i>
+            <h1>Gửi vợ Hà anh🥰</h1>
+            <p>Ngày hôm nay không chỉ là dịp để tôn vinh vẻ đẹp và sức mạnh của phụ nữ, mà còn là dịp để anh gửi đến em, Hà Anh, những lời chúc tốt đẹp nhất. Ngày 8/3 không chỉ là một ngày đặc biệt, mà còn là cơ hội để anh bày tỏ lòng biết ơn và yêu thương với em.
+                Em là ngọn nắng ấm áp trong cuộc đời anh, là người luôn mang lại niềm vui và sự động viên mỗi ngày. Trái tim anh luôn rộn ràng khi có em bên cạnh, và từng khoảnh khắc ấy đều trở nên ý nghĩa hơn bao giờ hết.
+                Nhân ngày này, anh muốn gửi đến em những lời chúc thật nhiều niềm vui và hạnh phúc. Chúc em luôn mạnh khỏe, xinh đẹp và thành công trên mọi con đường mà em chọn. Chúc em luôn vui vẻ, hạnh phúc và tràn đầy sức sống.
+                Hà Anh ơi, cảm ơn em vì đã là người đặc biệt đến bên anh. Mỗi ngày, cạnh em là một món quà vô giá mà anh sẽ luôn trân trọng. Chúc mừng ngày 8/3, và chúc em luôn hạnh phúc và yêu đời.
+            </p>
+            <p>Yêu em nhiều!💌</p>
+        </div>      
+    </div>
+    <div class="button-1">
+        <!-- <p class="p-page">Click here</p> -->
+        <a href="index.html" class="arrow-button" target="_blank"></a>
+    </div>
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelector(".wrapper"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.25,
+        gyroscopeMinAngleX: -45,
+	});
+	var btn =document.querySelector("button")
+    var closeBtn = document.querySelector(".fa-xmark");
+    btn.addEventListener("click", ()=>{
+        document.querySelector(".wrapper").classList.add("active")
+        btn.style.display="none";
+    })
+    closeBtn.addEventListener("click", ()=>{
+        document.querySelector(".wrapper").classList.remove("active")
+        btn.style.display = "block";
+    })
+</script>
+</html>
